@@ -18,7 +18,7 @@
 
 body{
 
-  background: #1f242d;
+  background: #06050b;
 
   color: #fff;
 
@@ -102,7 +102,7 @@ body{
 
 .navbar a.active {
 
-  color: #0ef;
+  color: #fece00;
 
 }
 
@@ -166,7 +166,7 @@ body{
 
 .home-content h3 span {
 
-  color: #0ef;
+  color: #fece00;
 
 }
 
@@ -234,13 +234,13 @@ body{
 
   background: transparent;
 
-  border: 2px solid #0ef;
+  border: 2px solid #fece00;
 
   border-radius: 50%;
 
   font-size: 20px;
 
-  color: #0ef;
+  color: #fece00;
 
   text-decoration: none;
 
@@ -258,11 +258,11 @@ body{
 
 .social-media a:hover {
 
-  background: #0ef;
+  background: #fece00;
 
   color: #1f242d;
 
-  box-shadow: 0 0 20px #0ef;
+  box-shadow: 0 0 20px #fece00;
 
  
 
@@ -276,11 +276,11 @@ body{
 
   padding: 12px 28px;
 
-  background: #0ef;
+  background: #fece00;
 
   border-radius: 40px;
 
-  box-shadow: 0 0 10px #0ef;
+  box-shadow: 0 0 10px  #fece00;
 
   font-size: 16px;
 

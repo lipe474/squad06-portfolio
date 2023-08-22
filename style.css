@@ -7,8 +7,8 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
-  background: #1f242d;
+body {
+  background: #06050b;
   color: #fff;
 }
 
@@ -23,6 +23,8 @@ body{
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  border-bottom: 1px solid #fece00;
+  position: fixed;
 }
 
 .logo {
@@ -35,6 +37,10 @@ body{
   animation: slideRight 1s ease forwards;
 }
 
+.logo > strong {
+  color: #fece00;
+}
+
 .navbar a {
   display: inline-block;
   font-size: 18px;
@@ -44,13 +50,12 @@ body{
   margin-left: 35px;
   transition: 0.3s;
   opacity: 0;
-  animation: slideTop .5s ease forwards;
-  animation-delay: calc(.2s * var(--i));
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 
-.navbar a:hover,
-.navbar a.active {
-  color: #0ef;
+.navbar a:hover {
+  color: #fece00;
 }
 
 .home {
@@ -72,17 +77,17 @@ body{
   font-weight: 700px;
   opacity: 0;
   animation: slideBottom 1s ease forwards;
-  animation-delay: .7s;
+  animation-delay: 0.7s;
 }
 
-.home-content h3:nth-of-type(2){
+.home-content h3:nth-of-type(2) {
   margin-bottom: 30px;
   animation: slideTop 1s ease forwards;
-  animation-delay: .7s;
+  animation-delay: 0.7s;
 }
 
 .home-content h3 span {
-  color: #0ef;
+  color: #fece00;
 }
 
 .home-content h1 {
@@ -116,30 +121,29 @@ body{
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #0ef;
+  border: 2px solid #fece00;
   border-radius: 50%;
   font-size: 20px;
-  color: #0ef;
+  color: #fece00;
   text-decoration: none;
   margin: 30px 15px 30px 0;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
-  animation-delay: calc(.2s * var(--i));
+  animation-delay: calc(0.2s * var(--i));
 }
 
 .social-media a:hover {
-  background: #0ef;
+  background: #fece00;
   color: #1f242d;
-  box-shadow: 0 0 20px #0ef;
-
+  box-shadow: 0 0 20px #fece00;
 }
 
 .btn {
   display: inline-block;
   padding: 12px 28px;
-  background: #0ef;
+  background: #fece00;
   border-radius: 40px;
-  box-shadow: 0 0 10px #0ef;
+  box-shadow: 0 0 10px #fece00;
   font-size: 16px;
   color: #1f242d;
   letter-spacing: 1px;
@@ -150,13 +154,14 @@ body{
   animation-delay: 2s;
 }
 
-
 /* KEYFRAMES ANIMATION */
+
 @keyframes slideRight {
   0% {
     opacity: 0;
     transform: translateX(-100px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -168,6 +173,7 @@ body{
     opacity: 0;
     transform: translateX(100px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -179,6 +185,7 @@ body{
     opacity: 0;
     transform: translateY(100px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -190,6 +197,7 @@ body{
     opacity: 0;
     transform: translateY(-100px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -201,6 +209,7 @@ body{
     opacity: 0;
     transform: scale(0);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -211,9 +220,11 @@ body{
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-24px);
   }
+
   100% {
     transform: translateY(0);
   }

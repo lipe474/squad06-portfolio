@@ -27,6 +27,10 @@ body {
   position: fixed;
 }
 
+.header > a {
+  cursor: pointer;
+}
+
 .logo {
   font-size: 25px;
   color: #fff;

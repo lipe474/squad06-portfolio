@@ -5,19 +5,19 @@ membersSelect.addEventListener('change', function () {
   console.log(selectedValue)
 
   if (selectedValue === 'davi') {
-    window.location.href = 'davi.html';
+    window.location.href = 'davi/index.html';
   }
 
   if (selectedValue === 'felipe') {
-    window.location.href = 'felipe.html';
+    window.location.href = 'felipe/index.html';
   }
 
   if (selectedValue === 'fernanda') {
-    window.location.href = 'fernanda.html';
+    window.location.href = 'fernanda/index.html';
   }
 
   if (selectedValue === 'luan') {
-    window.location.href = 'luan.html';
+    window.location.href = 'luan/index.html';
   }
 });
 

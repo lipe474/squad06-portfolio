@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #06050b;
+  background: #000000;
   color: #fff;
 }
 
@@ -138,7 +138,7 @@ body {
 
 .social-media a:hover {
   background: #fece00;
-  color: #1f242d;
+  color: #000000;
   box-shadow: 0 0 20px #fece00;
 }
 
@@ -149,7 +149,7 @@ body {
   border-radius: 40px;
   box-shadow: 0 0 10px #fece00;
   font-size: 16px;
-  color: #1f242d;
+  color: #000000;
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;

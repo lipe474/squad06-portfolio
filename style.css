@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #06050b;
+  background: #000000;
   color: #fff;
 }
 
@@ -58,7 +58,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   width: 110px;
-  background-color: transparent;
+  background-color: #000000;
   color: #fff;
   border: none;
 }
@@ -165,35 +165,13 @@ body {
 }
 
 @media (max-width: 1366px) {
-  .content {
-    padding: 2rem;
-    border-radius: 5px;
-    background-color: #52525265;
-  }
-
   #cover {
     max-width: 900px;
   }
 
-  /* .home {
-    flex-direction: column;
-  } */
-
-  /* .home-content {
-    width: 100%;
-  } */
-
   .home-content h1 {
     font-size: 40px;
   }
-
-  /* .home-content p {
-    font-size: 15px;
-  } */
-
-  /* .btn {
-    margin-top: 1rem;
-  } */
 }
 
 @media (max-width: 760px) {
@@ -204,7 +182,7 @@ body {
   }
 
   #logo {
-    background-color: black;
+    background-color: #000000;
     border-radius: 5px;
     width: 130px;
     bottom: 2%;

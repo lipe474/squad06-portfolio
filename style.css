@@ -18,7 +18,7 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: transparent;
+  background: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,6 +162,93 @@ body {
   background-color: #fece00;
   transition: color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 1366px) {
+  .content {
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: #52525265;
+  }
+
+  #cover {
+    max-width: 900px;
+  }
+
+  /* .home {
+    flex-direction: column;
+  } */
+
+  /* .home-content {
+    width: 100%;
+  } */
+
+  .home-content h1 {
+    font-size: 40px;
+  }
+
+  /* .home-content p {
+    font-size: 15px;
+  } */
+
+  /* .btn {
+    margin-top: 1rem;
+  } */
+}
+
+@media (max-width: 760px) {
+  #cover {
+    max-width: 400px;
+    bottom: 0;
+    position: fixed;
+  }
+
+  #logo {
+    background-color: black;
+    border-radius: 5px;
+    width: 130px;
+    bottom: 2%;
+    left: auto;
+    position: fixed;
+  }
+
+  .home {
+    flex-direction: column;
+    margin-top: 4rem;
+    height: 576px;
+  }
+
+  .home-content {
+    width: 100%;
+  }
+
+  .home-content h1 {
+    font-size: 25px;
+  }
+
+  .home-content p {
+    font-size: 13.5px;
+    margin-top: 15px;
+  }
+
+  .btn {
+    margin-top: 2rem;
+    width: 155px;
+    height: 45px;
+    font-size: 13.5px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .navbar a {
+    display: none;
+  }
+
+  #members {
+    display: none;
+  }
 }
 
 /* KEYFRAMES ANIMATION */

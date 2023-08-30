@@ -82,11 +82,6 @@ body {
   color: black;
 }
 
-#menu,
-.menu-mobile {
-  display: none;
-}
-
 .navbar a:hover {
   color: #fece00;
 }
@@ -169,6 +164,13 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
+@media (min-width: 768px) {
+  #menu,
+  .menu-mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 1366px) {
   #cover {
     max-width: 900px;
@@ -179,7 +181,7 @@ body {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   #cover {
     max-width: 400px;
     bottom: 0;
@@ -237,8 +239,8 @@ body {
     width: 30px;
     display: block;
     cursor: pointer;
-    animation: slideTop 0.5s ease forwards;
-    animation-delay: calc(0.2s * var(--i));
+    animation: slideLeft 0.3s ease forwards;
+    animation-delay: calc(0.3 * var(--i));
   }
 
   .menu-mobile {
@@ -248,19 +250,30 @@ body {
     width: 50%;
     height: 100%;
     flex-direction: column;
-    background-color: rgba(
-      15,
-      15,
-      15,
-      0.829
-    ); /* Cor de fundo com transparência */
-    z-index: 9999; /* Coloca a div acima de tudo */
+    background-color: rgba(15, 15, 15, 0.829);
+    z-index: 9999;
+    transition: right 1s ease;
+    animation: none;
+  }
+
+  .menu-open {
+    animation: slideIn 0.5s forwards;
+    display: flex;
+  }
+
+  .menu-closed {
+    animation: slideOut 0.5s forwards;
+    display: flex;
+  }
+
+  .close-menu {
+    cursor: pointer;
   }
 
   .menu-mobile > img {
     width: 35px;
     position: fixed;
-    right: 9.5%;
+    right: 20%;
     top: 2.7%;
   }
 
@@ -295,6 +308,24 @@ body {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
 
